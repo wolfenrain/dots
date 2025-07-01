@@ -1,0 +1,192 @@
+* {
+    --editor-group-tab-height: 28px !important;
+}
+
+/* Titlebar */
+.titlebar .titlebar-left,
+.titlebar .titlebar.center,
+.titlebar .titlebar.right {
+    display: none !important;
+    -webkit-app-region: no-drag !important;
+}
+.titlebar .titlebar-drag-region {
+    height: 4px !important;
+}
+
+/* Custom tabs */
+.split-view-view:has(>.monaco-grid-branch-node) {
+    top: 0px !important;
+    height: calc(100% - 22px) !important;
+}
+.nosidebar .tabs-container {
+    padding-left: 66px !important;
+}
+.tabs-container .breadcrumbs-below-tabs {
+    font-size: 10px !important;
+}
+
+/* File Explorer Selected Item */
+/* .monaco-list.list_id_1 .monaco-list-row.selected {
+    background-color: #4f5971 !important;
+    opacity: 1 !important;
+    border-top: 1px #727b90 solid;
+    border-bottom: 1px #727b90 solid;
+} */
+
+/* Hide the ">" chevron icon */
+/* .codicon-tree-item-expanded:before {
+    display: none !important; 
+}*/
+
+/* List item label name */
+/* .monaco-list.list_id_1 .monaco-list-row.selected .label-name {
+    color: #fff !important;
+    opacity: 1 !important;
+} */
+
+/* Sidebar */
+.sidebar  {
+    height: 100% !important;
+}
+.sidebar .composite.title {
+    display: none !important;
+}
+.sidebar .composite.header {
+    height: var(--editor-group-tab-height) !important;
+}
+.sidebar .composite .composite-bar-container {
+    flex-direction: row-reverse !important;
+}
+.sidebar .content {
+    padding-bottom: 35px;
+}
+.sidebar .header {
+    padding: 4px !important;
+}
+
+/* Statusbar */
+.split-view-view:has(>.statusbar) {
+    top: auto !important;
+    bottom: 0px !important;
+    height: 48px !important;
+}
+.statusbar {
+    height: 48px !important;
+}
+
+.monaco-workbench .monaco-list:not(.element-focused):focus:before {
+    outline: 0 !important;
+}
+
+/* Scroll Bar */
+/* .slider {
+    position: absolute !important;
+    right: 1px !important;
+    width: 1px !important;
+    background: #bc9abc !important;
+    left: auto !important;
+} */
+
+/* Tooltip box style */
+.monaco-editor-hover,
+.monaco-hover {
+    box-shadow: 0px 8px 32px rgba(0,0,0,.45) !important;
+    /*  */
+    /* background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important; */
+    /* backdrop-filter: blur(3px) !important; */
+    border-radius: 16px !important;
+    border: none !important;
+    outline: 0px !important;
+    padding: 10px !important;
+    
+}
+
+.monaco-resizable-hover {
+    border: none !important;
+}
+
+/* Search Label */
+.search-label {
+    font-size: 14px !important;
+    color: #fff;
+    display: block;
+}
+
+/* Search icon */
+.search-icon {
+    display: none !important;
+}
+
+.codicon-search::before {
+    display: none !important;
+}
+
+.codicon-arrow-right, .codicon-arrow-left {
+    display: none !important;
+}
+
+.titlebar-right > * {
+    display: none !important;
+}
+
+.command-center-center {
+    width: auto !important;
+}
+
+/* Command Palette */
+.quick-input-widget {
+    transform: translateY(-50%) !important;
+    top: 50% !important;
+    padding: 10px 10px 10px 10px !important;
+    border-radius: 16px !important;
+
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, .35) !important;
+    /* background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important; */
+    /* backdrop-filter: blur(3px) !important; */
+}
+
+.quick-input-list, .quick-input-list .list_id_6 {
+    min-height: 400px !important;
+}
+
+/* Remove background for lists */
+/* .monaco-list-rows {
+    background: transparent !important;
+} */
+
+/* Command palette text input */
+.quick-input-filter .monaco-inputbox {
+    border-radius: 12px !important;
+    padding: 8px !important;
+    border: none !important;
+    font-size: 16px !important;
+    margin-bottom: 8px !important;
+}
+
+#command-blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .15);
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(8px);
+}
+
+/* Actions after command palette text input */
+.quick-input-inline-action-bar .actions-container .action-item{
+	margin-bottom: 16px !important; /* Same margin-bottom as .monaco-inputbox */
+}
+.quick-input-header{
+	align-items: center;
+}
+
+/* Command palette's input box placeholder. */
+.monaco-inputbox input::placeholder {
+    color: rgba(255, 255, 255, .3) !important;
+}
+
+/* Container that holds the VS Code home icon. */
+.editor-group-watermark {
+    max-width: none !important;
+}

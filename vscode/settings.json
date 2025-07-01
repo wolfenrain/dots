@@ -1,0 +1,23 @@
+{
+    "terminal.external.osxExec": "iTerm.app",
+    "editor.minimap.enabled": false,
+    "window.commandCenter": false,
+    "chat.commandCenter.enabled": false,
+    "breadcrumbs.enabled": true,
+    "vscode_custom_css.imports": [
+        "file:///Users/wolfen/.config/vscode/custom.css"
+    ],
+    "workbench.iconTheme": "vs-minimal",
+    "workbench.activityBar.location": "top",
+    "workbench.colorTheme": "Rosé Pine Moon",
+    "window.titleBarStyle": "custom",
+    "workbench.startupEditor": "none",
+    "workbench.editor.enablePreview": false,
+    "workbench.layoutControl.enabled": false,
+
+    "debug.toolBarLocation": "docked",
+
+    // Flutter and Dart configs.
+    "dart.flutterSdkPath": "/Users/wolfen/fvm/default/bin",
+    "editor.formatOnSave": true,
+}
