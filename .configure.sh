@@ -1,6 +1,6 @@
 # Configure VSCode
-cp vscode/settings.json cp ~/Library/Application\ Support/Code/User/settings.json
-cp vscode/state.vscdb ~/Library/Application\ Support/Code/User/globalStorage/state.vscdb
+cp vscode/settings.json cp ~/Library/Application\ Support/Code/User/
+cp vscode/state.vscdb ~/Library/Application\ Support/Code/User/globalStorage/
 cat vscode/extensions.txt | while read line; do
     /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension $line
 done
