@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+git config --global user.name "Jochum van der Ploeg"
+git config --global user.email "jochum@vdploeg.net"
+
 # Install xCode cli tools
 echo "Installing commandline tools..."
 xcode-select --install
@@ -22,6 +25,7 @@ brew install sketchybar
 brew install yabai
 brew install jq
 brew install wget
+brew install --cask iterm2
 
 ### Development
 brew install --cask visual-studio-code
