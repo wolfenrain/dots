@@ -29,6 +29,7 @@ brew install --cask iterm2
 
 ### Development
 brew install --cask visual-studio-code
+brew install lua
 brew install ruby
 echo 'export PATH="$(brew --prefix)/opt/ruby/bin:$PATH"' >> $HOME/.zshrc
 brew install cocoapods
@@ -48,8 +49,13 @@ brew install spicetify-cli
 brew install --cask sf-symbols
 brew install --cask font-sf-mono
 brew install --cask font-sf-pro
+curl -L https://github.com/kvndrsslr/sketchybar-app-font/releases/download/v2.0.28/sketchybar-app-font.ttf -o $HOME/Library/Fonts/sketchybar-app-font.ttf
+
+# Install Sbarlua
+(git clone https://github.com/FelixKratz/SbarLua.git /tmp/SbarLua && cd /tmp/SbarLua/ && make install && rm -rf /tmp/SbarLua/)
 
 # Link configs
+# TODO: this should not be symlinks?
 ln -Fs borders/ ~/.config/borders
 ln -Fs sketchybar/ ~/.config/sketchybar
 ln -Fs skhd/ ~/.config/skhd
@@ -64,8 +70,6 @@ brew services start sketchybar
 brew services start borders
 
 source $HOME/.zshrc
-
-mkdir -p ~/.config/borders && ln -Fs borders/bordersrc ~/.config/borders/bordersrc
 
 csrutil status
 echo "(optional) Disable SIP for advanced yabai features."
