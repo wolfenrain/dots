@@ -55,11 +55,6 @@ ln -Fs sketchybar/ ~/.config/sketchybar
 ln -Fs skhd/ ~/.config/skhd
 ln -Fs spicetify/ ~/.config/spicetify
 ln -Fs yabai/ ~/.config/yabai
-cp vscode/settings.json cp ~/Library/Application\ Support/Code/User/settings.json
-cp vscode/state.vscdb ~/Library/Application\ Support/Code/User/globalStorage/state.vscdb
-cat vscode/extensions.txt | while read line; do
-    /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension $line
-done
 
 # Start Services
 echo "Starting Services (grant permissions)..."
@@ -67,12 +62,6 @@ skhd --start-service
 yabai --start-service
 brew services start sketchybar
 brew services start borders
-
-# Configure Spotify
-spicetify backup apply enable-devtools
-spicetify config current_theme RosePine
-spicetify config color_scheme rose-pine-moon
-spicetify apply
 
 source $HOME/.zshrc
 
